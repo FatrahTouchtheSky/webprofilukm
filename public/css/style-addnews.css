@@ -1,0 +1,217 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000e7;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0);
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 0, 0.5));
+    border-bottom-right-radius: 50px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 220px;
+
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+    /* margin: 20px; */
+    border-radius: 5px;
+    outline: 1px solid transparent;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a.active, .sidebar nav ul li a:hover {
+    color: #ffff08;
+    background-color: #c4c4c445;
+}
+.sidebar nav ul li a .material-symbols-outlined {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #272727; */
+    overflow-y: auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar img {
+    width: 70px;
+    margin: 25px 10px 30px 20px;
+    float: left;
+}
+
+.navbar .pnup {
+    width: 60px;
+}
+/* .navbar img.pnup, .navbar img.ukm {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+} */
+
+.navbar .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #060606;
+    align-items: center;
+    margin-left: 1070px;
+    margin-top: 35px;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+.header h1 {
+    color: #ffff08;
+    background: linear-gradient(90deg, #ffffff, #e0e038, #e0e038);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-top: 110px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    font-size: 40px;
+    margin-left: 55px;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px; /* Add some space between the form and the image */
+    margin-top: 10px; /* Add some space between the form and the image */
+}
+
+.registration-form label {
+    margin: 10px 2px 10px;
+    font-weight: bold;
+    color: #ffff08;
+
+}
+
+.registration-form input {
+    width: 340px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.registration-form textarea {
+    width: 650px;
+    min-height: 250px;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    resize: vertical;
+    color: #1b1b1b;
+    white-space: pre-wrap;
+}
+
+.registration-form textarea:focus {
+    outline: 2px solid #ffff08;
+    border-color: #ffff08;
+}
+.registration-form select {
+    width: 385px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    appearance: none;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Jarak antara tombol-tombol */
+    margin-top: 10px; /* Jarak atas container dengan form */
+}
+
+.btn-back, .btn-accept {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-back {
+    background-color: #00f7ff;
+    color: #000;
+}
+
+.btn-accept {
+    background-color: #ffff08;
+    color: #000;
+}
+
+
+.img {
+    width: 450px;
+    float: right;
+    margin-top: -450px;
+    margin-right: 350px;
+}
+
+.bg2{
+    margin-left: -530px;
+    margin-top: -80px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff5e;
+}

@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/hed1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.103);
+    padding: 20px 50px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.646);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-form h2 {
+    margin-bottom: 40px;
+    /* letter-spacing: 0.2rem; */
+    font-family: 'Teko', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 20px;
+    color: #ffee00;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-left: -10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 5px;
+    color: #f7ff05ad;
+}
+
+.input-group input {
+    width: 300px;
+    padding: 10px;
+    margin-left: -10px;
+    /* border: #fe1c42, 10px; */
+    border-bottom: 1.5px solid #fedc1c8e;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0);
+    /* background: rgba(255, 255, 255, 0.3);  */
+    color: #fff700; /* Text color for input fields */
+    outline: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    background: rgba(0, 123, 255, 0.2); /* Background color on focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: #ffff08; /* Button background color */
+    color: #060101;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 123, 255, 0.5);
+}
+.error-messages{
+    color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

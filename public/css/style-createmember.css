@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #1e1e1e; */
+    background-color: #f4f4f4;
+    color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    z-index: 10;
+    position: fixed;
+    height: 80px;
+    top: -10px;
+    background-color: #ffffff;
+    inset: 0;
+    /* transition: background-color 0.3s ease; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* .header.scrolled {
+    background-color: #191818; 
+} */
+.logo {
+    width: 70px;
+    position: fixed;
+    left: 106px;
+    top: 10px;
+}
+.pnup {
+    width: 50px;
+    position: fixed;
+    top: 15px;
+    left: 30px;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 30px;
+}
+
+.nav-list li a {
+  position: relative;
+  color: #b4b4b4;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 5px;
+  transition: color 0.1s ease;
+}
+
+.nav-list li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-list li a:hover::before,
+.nav-list li a.active::before {
+  width: 100%;
+  left: 0;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: #0A0A0A;
+  /* border-bottom: 2px solid rgb(238, 255, 0);
+  color: #ffff08; */
+}
+.daftar {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    font-family: "Inter-SemiBold", sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 1500px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    background: linear-gradient(45deg, #e70ae7, #ffe100);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+    animation: gradientAnimation 3s ease infinite;
+  }
+  
+  .daftar:hover {
+    cursor: pointer;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    background: linear-gradient(45deg, #080808, #898989);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: normal;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+.welcome-text p {
+    text-align: center;
+    background: linear-gradient(45deg, #080808, #898989);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+
+.welcome-text span {
+    color: #656565;
+}
+.linebrt1 {
+    width: 750px;
+    height: 1.5px;
+    background: #0a0a0a;
+    margin-left: -50px;
+    margin-bottom: 30px;
+    float: left;
+} 
+.welcome-text img {
+    width: 80px;
+    margin-top: -10px;
+    float: right;
+    filter: brightness(0.1);
+}
+.form-and-image {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #0c0c0c;
+    border-color: #c3e6cb;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 70px; /* Add some space between the form and the image */
+}
+
+.registration-form label {
+    margin: 10px 2px 10px;
+    font-weight: bold;
+    color: #3b3b3b;
+    align-self: flex-start; /* Align labels to the start (left) */
+}
+
+.registration-form input {
+    width: 300px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* color: #fff; */
+    border: none;
+    border-radius: 5px;
+}
+.file {
+    color: #020202;
+}
+.registration-form select {
+    width: 345px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* color: #fff; */
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+}
+.registration-form .buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    width: 100%;
+    gap: 15px; /* Add space between the buttons */
+}
+
+.btn-back, .btn-accept {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-back {
+    background-color: #ff2200;
+    color: #000;
+}
+
+.btn-accept {
+    background-color: #08ff46;
+    color: #000;
+}
+
+.img {
+    width: 500px;
+}
+
+.bg2 {
+    width: 100%;
+    max-width: 1707px;
+    margin-top: 40px;
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #191818;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff5e;
+    margin-left: 20px; /* Adjust this margin to position the text properly */
+}
+
+.ftr1, .ftr2, .ftr3, .ftr4 {
+    background-color: #1e1e1e;
+    filter: brightness(1.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.ftr1:hover, .ftr2:hover, .ftr3:hover, .ftr4:hover {
+    background-color: #ffff08;
+}
+
+.medsos1, .medsos2, .medsos3, .medsos4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+}
