@@ -9,7 +9,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $news = News::where('status', 'ON')->get();
+        try {
+            $news = News::where('status', 'ON')->get();
+        } catch (\Throwable $e) {
+            $news = collect();
+        }
         return view('home', compact('news'));
     }
 }
